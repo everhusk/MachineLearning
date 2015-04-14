@@ -22,15 +22,17 @@ from sklearn.metrics import accuracy_score
 features_train, features_test, labels_train, labels_test = preprocess()
 
 
-
-
+print len(features_train[0])
+## 3785 features with 10 percentile
+## 379 features with 1 percentile
 #########################################################
 ### your code goes here ###
 clf = tree.DecisionTreeClassifier(min_samples_split=40)
 clf = clf.fit(features_train, labels_train)
 prediction = clf.predict(features_test)
 print accuracy_score(prediction, labels_test)
-## Accuracy: 0.977815699659
+## Accuracy: 0.977815699659 (10 percentile)
+## Accuracy: 0.967007963595 (1 percentile)
 #########################################################
 
 
