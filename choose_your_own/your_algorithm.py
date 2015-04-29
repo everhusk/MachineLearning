@@ -29,6 +29,7 @@ plt.show()
 
 ### your code here!  name your classifier object clf if you want the 
 ### visualization code (prettyPicture) to show you the decision boundary
+
 '''
 # K-Nearest-Neighbors Classifer
 from sklearn.neighbors import KNeighborsClassifier
