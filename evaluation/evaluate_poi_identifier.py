@@ -48,6 +48,7 @@ print "Accuracy if all zeros: ", accuracy_score([0]*29, labels_test)
 
 from collections import Counter
 confusion_matrix = Counter()
+
 #truth = labels_test
 prediction = [0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1] 
 truth = [0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0]
